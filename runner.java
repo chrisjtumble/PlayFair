@@ -89,13 +89,32 @@ public class runner {
 		 
 		 char replace = 'X';
 		 String plain_text = "The Meeting is at trefforest";
-		 
+		 String encrypted_text = "";
 		 System.out.println(plain_text);
 		 
 		 plain_text = plain_text.toLowerCase();
 		 plain_text = plain_text.replaceAll("\\s+","X");
 		 
 		 System.out.println(plain_text);
+
+		 
+		 //Program Rules---> Different Row & Column
+		 //-) Iterate For Loop get X,Y value for first letter
+		 //-) Repeat for second letter
+		 //-) Compute New First Letter index's
+		 //-) Computer New Second Letter index's
+
+		 //Same Row Different Column
+		 //Obtain first letter index's
+		 //Obtain second letter index's
+		 
+		 //2nd & 3rd Rule
+		 //X stays same
+		 //Y + 1
+		 
+		 //Same Column Different Row
+		 //X + 1
+		 //Y stays the same
 	 
  }
  private static String duplicateRemover(String source) {
