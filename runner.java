@@ -1,12 +1,4 @@
-//Output
-//[p, u, z, l, e]
-//[a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
-//[a, b, c, d, f, g, h, i, j, k, m, n, o, q, r, s, t, v, w, x, y]
-//p  u  z  l  e  
-//a  b  c  d  f  
-//g  h  i  j  k  
-//m  n  o  q  r  
-//s  t  v  w  x  
+package playfairEncryption;
 
 import java.util.ArrayList;
 
@@ -92,8 +84,18 @@ public class runner {
 		 }
 	 
 
-
-
+		 
+		 //7)Replace white spaces in cryptographic message
+		 
+		 char replace = 'X';
+		 String plain_text = "The Meeting is at trefforest";
+		 
+		 System.out.println(plain_text);
+		 
+		 plain_text = plain_text.toLowerCase();
+		 plain_text = plain_text.replaceAll("\\s+","X");
+		 
+		 System.out.println(plain_text);
 	 
  }
  private static String duplicateRemover(String source) {
@@ -107,5 +109,3 @@ public class runner {
 	  return target;
 	 }
 }
-
-
